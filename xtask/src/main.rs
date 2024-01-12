@@ -57,7 +57,7 @@ struct BuildArgs {
 
 impl BuildArgs {
     fn make(&self, package: &str, binary: bool) -> PathBuf {
-        let target = "riscv64imac-unknown-none-elf";
+        let target = "riscv64gc-unknown-none-elf";
         Cargo::build()
             .package(package)
             .optional(&self.log, |cargo, log| {

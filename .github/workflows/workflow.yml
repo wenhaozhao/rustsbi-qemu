@@ -44,6 +44,6 @@ jobs:
           options: -v ${{ github.workspace }}:/work
           run: |
             rustup component add llvm-tools-preview
-            rustup target add riscv64imac-unknown-none-elf
+            rustup target add riscv64gc-unknown-none-elf
             cd /work
             cargo test
